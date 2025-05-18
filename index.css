@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 400px;
+  background-color: hsl(0, 0%, 12%);
+  margin: auto;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.profile-con {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-image {
+  margin: 1rem 0;
+
+  img {
+    width: 40%;
+    border-radius: 6rem;
+  }
+}
+
+.profile-info {
+  margin: 1rem 0;
+  h3 {
+    margin-top: 0.75rem;
+    color: hsl(75, 94%, 57%);
+  }
+  p {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.profile-links {
+  a {
+    background-color: hsl(0, 0%, 20%);
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+}
